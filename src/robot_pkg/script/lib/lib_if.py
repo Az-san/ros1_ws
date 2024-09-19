@@ -76,17 +76,8 @@ class LibIF:
         # イニシャライズ
 
         #==================================================
-        pygame.joystick.init()
-        try:
-            self.j = pygame.joystick.Joystick(0) # create a joystick instance
-            self.j.init() # init instance
-            print("Joystickの名称: " + self.j.get_name())
-            print("ボタン数 : " + str(self.j.get_numbuttons()))
-        except pygame.error:
-            print("Joystickが見つかりませんでした。")
-
-        # pygameの初期化
         pygame.init()
+        print("キーボード入力を使用します。")
 
 
         return
@@ -124,39 +115,27 @@ class LibIF:
     ## @return
 
     #==================================================
-    def waitGamepad(
-        self,
-        timeout = 30
-    ):
-        # 開始の時刻を保存
-        start_time = time.time()
-        # 経過した時刻を取得
+def waitKeyboard(self, timeout=30):
+    start_time = time.time()
+    end_time = time.time()
+    result = None
+    while end_time - start_time <= timeout:
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key in [pygame.K_UP, pygame.K_w]:
+                    result = [1, 0, 0, 0]  # 上 or W
+                elif event.key in [pygame.K_DOWN, pygame.K_s]:
+                    result = [0, 1, 0, 0]  # 下 or S
+                elif event.key in [pygame.K_RIGHT, pygame.K_d]:
+                    result = [0, 0, 1, 0]  # 右 or D
+                elif event.key in [pygame.K_LEFT, pygame.K_a]:
+                    result = [0, 0, 0, 1]  # 左 or A
+        if result is not None:
+            break
         end_time = time.time()
-        # resultにゲームパッドの値を格納 timeout秒でbreak
-        result = None
-        while end_time - start_time <= timeout:
-            for event in pygame.event.get():
-                if event.type == pygame.locals.JOYHATMOTION:
-                    x, y = self.j.get_hat(0)
-                    if y == 1:
-                        print("St")
-                        result = [1, 0, 0, 0]
-                    elif y == -1:
-                        print("Ba")
-                        result = [0, 1, 0, 0]
-                    elif x == 1:
-                        print("Ri")
-                        result = [0, 0, 1, 0]
-                    elif x == -1:
-                        print("Le")
-                        result = [0, 0, 0, 1]
+    return result
 
-            if result != None:
-                break
 
-            end_time = time.time()
-
-        return result
 
 
     #==================================================
