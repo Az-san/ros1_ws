@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/ros1_ws/src/openslam_gmapping_backup/gridfastslam/gfs2neff.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
+-
+

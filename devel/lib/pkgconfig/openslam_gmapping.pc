@@ -3,6 +3,6 @@ prefix=/root/ros1_ws/devel
 Name: openslam_gmapping
 Description: Description of openslam_gmapping
 Version: 0.2.1
-Cflags: -I/root/ros1_ws/src/openslam_gmapping/include -I/root/ros1_ws/devel/include
+Cflags: -I/root/ros1_ws/src/openslam_gmapping_backup/include -I/root/ros1_ws/devel/include
 Libs: -L${prefix}/lib -lutils -lsensor_base -lsensor_odometry -lsensor_range -llog -lconfigfile -lscanmatcher -lgridfastslam
 Requires: 

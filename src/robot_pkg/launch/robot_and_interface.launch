@@ -8,6 +8,6 @@
   <param name="random" value="$(arg random)" />
 
   <!-- sm -->
-  <node pkg="robot_pkg" name="MS_maze_search_node" type="MS_maze_search_node.py" output="screen"/>
+  <node pkg="robot_pkg" name="sm_search_maze_node" type="sm_search_maze_node.py" output="screen"/>
 
 </launch>

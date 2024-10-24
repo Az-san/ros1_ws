@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/ros1_ws/src/openslam_gmapping_backup/gridfastslam/gfs2rec.cpp
+cstring
+-
+iostream
+-
+fstream
+-
+sstream
+-
+vector
+-
+list
+-
+gmapping/utils/point.h
+-
+
+/root/ros1_ws/src/openslam_gmapping_backup/include/gmapping/utils/gvalues.h
+values.h
+-
+limits.h
+-
+math.h
+-
+limits
+-
+
+/root/ros1_ws/src/openslam_gmapping_backup/include/gmapping/utils/point.h
+assert.h
+-
+math.h
+-
+iostream
+-
+gmapping/utils/gvalues.h
+/root/ros1_ws/src/openslam_gmapping_backup/include/gmapping/utils/gmapping/utils/gvalues.h
+

@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "turtlebot3_fake")
-set(turtlebot3_fake_VERSION "1.2.0")
-set(turtlebot3_fake_MAINTAINER "Pyo <pyo@robotis.com>, Darby Lim <thlim@robotis.com>")
+set(turtlebot3_fake_VERSION "1.3.2")
+set(turtlebot3_fake_MAINTAINER "Will Son <willson@robotis.com>")
 set(turtlebot3_fake_PACKAGE_FORMAT "2")
 set(turtlebot3_fake_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf" "turtlebot3_msgs")
 set(turtlebot3_fake_BUILD_EXPORT_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf" "turtlebot3_msgs")

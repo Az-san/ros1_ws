@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "turtlebot3_gazebo")
-set(turtlebot3_gazebo_VERSION "1.2.0")
-set(turtlebot3_gazebo_MAINTAINER "Pyo <pyo@robotis.com>, Darby Lim <thlim@robotis.com>")
+set(turtlebot3_gazebo_VERSION "1.3.2")
+set(turtlebot3_gazebo_MAINTAINER "Will Son <willson@robotis.com>")
 set(turtlebot3_gazebo_PACKAGE_FORMAT "2")
 set(turtlebot3_gazebo_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf" "gazebo_ros")
 set(turtlebot3_gazebo_BUILD_EXPORT_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "geometry_msgs" "nav_msgs" "tf" "gazebo_ros")

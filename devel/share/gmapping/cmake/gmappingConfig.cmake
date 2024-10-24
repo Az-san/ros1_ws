@@ -67,7 +67,7 @@ set(gmapping_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(gmapping_SOURCE_PREFIX /root/ros1_ws/src/slam_gmapping/gmapping)
+  set(gmapping_SOURCE_PREFIX /root/ros1_ws/src/slam_gmapping_backup/gmapping)
   set(gmapping_DEVEL_PREFIX /root/ros1_ws/devel)
   set(gmapping_INSTALL_PREFIX "")
   set(gmapping_PREFIX ${gmapping_DEVEL_PREFIX})
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'gmapping' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/ros1_ws/src/slam_gmapping/gmapping/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'gmapping' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/root/ros1_ws/src/slam_gmapping_backup/gmapping/${idir}'.  ${_report}")
     endif()
     _list_append_unique(gmapping_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/ros1_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /root/ros1_ws/devel/lib;/root/ros1_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
