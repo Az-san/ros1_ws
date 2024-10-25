@@ -36,3 +36,5 @@
 2024-10-25 18:33:07.872 [info] Removed views:issues:github,pr:github from workbench.view.extension.github-pull-requests
 2024-10-25 18:33:07.872 [info] Added views:github:login in workbench.view.extension.github-pull-requests
 2024-10-25 18:33:56.774 [info] Added views:workbench.view.testing in workbench.view.extension.test
+2024-10-25 20:05:16.882 [info] Removed views:workbench.scm.history from workbench.view.scm
+2024-10-25 20:05:16.884 [info] Removed views:workbench.view.testing from workbench.view.extension.test

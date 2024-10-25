@@ -96,3 +96,7 @@ Try `python -h' for more information.
 2024-10-25 19:40:31.542 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/test/map_laser_read1kai_def.py
 2024-10-25 19:40:34.262 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/test/map_laser_read1kai_def.py
 2024-10-25 19:40:54.516 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/test/map_laser_read1kai_def.py
+2024-10-25 19:59:17.960 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/lib/lib_if.py
+2024-10-25 19:59:24.841 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/lib/lib_if.py
+2024-10-25 19:59:42.893 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/lib/lib_if.py
+2024-10-25 20:03:28.596 [info] Discover tests for workspace name: ros1_ws - uri: /root/ros1_ws/src/robot_pkg/script/node/gui_node.py

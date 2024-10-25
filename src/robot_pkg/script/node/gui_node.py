@@ -4,7 +4,7 @@
 #==================================================
 ## @file libnav
 ## @original_author Kentaro NAKAMURA
-## @modified for PyQt5 and hidapi by Maiko Kudo
+## @author Takumi FUJI
 ## @brief ライブラリクラス
 #==================================================
 
@@ -42,10 +42,7 @@ class GUI(QtWidgets.QWidget):
     ## @param 
     ## @return
     #==================================================
-    def __init__(
-        self,
-        *args
-    ):
+    def __init__(self, *args):
         super(QtWidgets.QWidget, self).__init__()
 
         #==================================================
@@ -98,19 +95,15 @@ class GUI(QtWidgets.QWidget):
         except IOError:
             print("Joystickが見つかりませんでした。")
 
-        return
-
     #==================================================
     ## @fn delete
     ## @brief デストラクタ
     ## @param
     ## @return
     #==================================================
-    def delete(
-        self
-    ):
-        # ファイナライズ
-        return
+    def delete(self):
+        if self.joystick:
+            self.joystick.close()
 
     #==================================================
     ## @fn imgCallback
@@ -118,16 +111,12 @@ class GUI(QtWidgets.QWidget):
     ## @param
     ## @return
     #==================================================
-    def imgCallback(
-        self,
-        data
-    ):
+    def imgCallback(self, data):
         try:
             tmp_sub_img_data = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
             print(e)
         self.robot_img = tmp_sub_img_data
-        return
 
     #==================================================
     ## @fn guiStateCallback
@@ -135,12 +124,8 @@ class GUI(QtWidgets.QWidget):
     ## @param
     ## @return
     #==================================================
-    def guiStateCallback(
-        self,
-        data
-    ):
+    def guiStateCallback(self, data):
         self.gui_state = data.data
-        return
 
     #==================================================
     ## @fn start
@@ -213,9 +198,18 @@ class GUI(QtWidgets.QWidget):
         else:
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             img = QtGui.QImage(frame, frame.shape[1], frame.shape[0], QtGui.QImage.Format_RGB888)
-        painter = QtGui.QPainter(img)
+        
+        # QPainterの初期化と使用
+        painter = QtGui.QPainter()
+        painter.begin(img)  # 画像の描画を開始
         painter.setBrush(QtCore.Qt.yellow)
-        # Additional rendering logic here...
+
+        # 必要な描画処理
+        # ...
+
+        painter.end()  # 必ず描画の終了を明示する
+        pix = QtGui.QPixmap.fromImage(img)
+        self.video_frame.setPixmap(pix)
 
     #==================================================
     ## @fn load_images
@@ -233,7 +227,18 @@ class GUI(QtWidgets.QWidget):
     ## @return
     #==================================================
     def load_mapimg(self, pos_pix=(0, 0), angle=0.0):
-        # Additional map loading logic here...
+        try:
+            self.map_img = cv2.imread(self.data_path + "/map.pgm")
+        except:
+            print("Map load error!")
+        else:
+            self.map_img = cv2.rotate(self.map_img, cv2.ROTATE_90_COUNTERCLOCKWISE)
+            pts = np.array([(
+                int(pos_pix[0] - 7 * np.sin(angle)), 
+                int(pos_pix[1] - 7 * np.cos(angle))
+            )])
+            cv2.fillPoly(self.map_img, [pts], (255, 0, 0))
+            self.map_img = cv2.resize(self.map_img, dsize=None, fx=0.8, fy=0.8)
 
     #==================================================
     ## @fn main
@@ -241,24 +246,36 @@ class GUI(QtWidgets.QWidget):
     ## @param
     ## @return
     #==================================================
-    def main(
-        self
-    ):
+    def main(self):
         self.setWindowFlags(QtCore.Qt.Window)
         self.start()
         self.setWindowTitle("Experiment GUI")
         self.show()
         print("Graphic Queue")
-        return
+        
+    #==================================================
+    ## @fn shutdown
+    ## @brief クラス終了時のシャットダウン処理
+    ## @param
+    ## @return
+    #==================================================
+    def shutdown(self):
+        self.close()  # ウィンドウを閉じる
+
 
 #==================================================
 # メイン
 #==================================================
 if __name__ == "__main__":
-    rospy.init_node(os.path.basename(__file__).split(".")[0])
-    app = QtWidgets.QApplication(sys.argv)
-    gui = GUI(0)
-    gui.main()
-    rospy.on_shutdown(gui.shutdown) 
-    app.exec_()
-    rospy.spin()
+    try:
+        rospy.init_node(os.path.basename(__file__).split(".")[0])
+        app = QtWidgets.QApplication(sys.argv)
+        gui = GUI(0)
+        gui.main()
+        rospy.on_shutdown(gui.shutdown) 
+        app.exec_()
+        rospy.spin()
+    except Exception as e:
+        rospy.logerr(f"An error occurred: {e}")
+        print(f"An error occurred: {e}")
+        

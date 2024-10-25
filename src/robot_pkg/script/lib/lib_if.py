@@ -48,7 +48,8 @@ class LibIF:
         # hidapiを使ってゲームパッドに接続
         self.device = None
         try:
-            self.device = hid.Device(0x046d, 0xc218)  # ロジクール RumblePad 2のVIDとPID
+            self.device = hid.device()
+            self.device.open(0x046d, 0xc218)# ロジクール RumblePad 2のVIDとPID
             print("ゲームパッドに接続しました: Logitech RumblePad 2 USB")
         except IOError as e:
             print(f"ゲームパッドが見つかりませんでした: {e}")
