@@ -4,7 +4,8 @@
         "workspaces": {
             "file:///root/ros1_ws": "__default__profile__",
             "file:///root": "__default__profile__",
-            "file:///ros1_ws/src/robot_pkg/script/lib": "__default__profile__"
+            "file:///ros1_ws/src/robot_pkg/script/lib": "__default__profile__",
+            "file:///ros1_ws": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -13,7 +14,12 @@
     "telemetry.machineId": "3424b72ee104e99be183dc60a7b751a058f3ff95747d04922fb59889f7e032b1",
     "telemetry.devDeviceId": "b0507abe-1caf-41eb-9f41-c601c457c825",
     "backupWorkspaces": {
-        "workspaces": [],
+        "workspaces": [
+            {
+                "id": "2ff703d383588f613978dda6d8c53b37",
+                "configURIPath": "file:///mycotainer.code-workspace"
+            }
+        ],
         "folders": [
             {
                 "folderUri": "file:///root/ros1_ws"
@@ -23,6 +29,9 @@
             },
             {
                 "folderUri": "file:///ros1_ws/src/robot_pkg/script/lib"
+            },
+            {
+                "folderUri": "file:///ros1_ws"
             }
         ],
         "emptyWindows": [
@@ -33,12 +42,12 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///ros1_ws/src/robot_pkg/script/lib",
-            "backupPath": "/ros1_ws/~/.vscode-root/Backups/5d0a0f53aaad6bf48f693a38bedadd14",
+            "folder": "file:///ros1_ws",
+            "backupPath": "/ros1_ws/~/.vscode-root/Backups/2b68e9eaed38ce0f6f5c02907504b004",
             "uiState": {
                 "mode": 1,
-                "x": 895,
-                "y": 31,
+                "x": 872,
+                "y": 36,
                 "width": 1024,
                 "height": 1001
             }
@@ -129,6 +138,28 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///ros1_ws",
+                                        "path": "/ros1_ws",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/ros1_ws"
+                                },
+                                {
+                                    "id": "openRecentWorkspace",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///mycotainer.code-workspace",
+                                        "path": "/mycotainer.code-workspace",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/mycotainer (ワークスペース)"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -754,6 +785,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "グループ内分割(&&G)"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "エディターを新しいウィンドウに移動する(&M)"
                                 },
@@ -853,8 +891,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "右端での折り返し(&&W)",
-                        "enabled": false
+                        "label": "右端での折り返し(&&W)"
                     }
                 ]
             },
@@ -862,8 +899,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "戻る(&&B)",
-                        "enabled": false
+                        "label": "戻る(&&B)"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -872,8 +908,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "最後の編集場所(&&L)",
-                        "enabled": false
+                        "label": "最後の編集場所(&&L)"
                     },
                     {
                         "id": "vscode.menubar.separator"

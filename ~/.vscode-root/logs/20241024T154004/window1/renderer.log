@@ -14,3 +14,6 @@
     at Process.ChildProcess._handle.onexit (node:internal/child_process:286:19)
     at onErrorNT (node:internal/child_process:484:16)
     at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-10-24 16:56:10.273 [info] Started local extension host with pid 25439.
+2024-10-24 17:06:19.310 [info] Started local extension host with pid 26801.
+2024-10-24 17:06:21.973 [info] [perf] Render performance baseline is 22ms
