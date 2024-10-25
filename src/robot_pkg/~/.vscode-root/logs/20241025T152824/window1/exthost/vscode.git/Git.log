@@ -1,0 +1,41 @@
+2024-10-25 15:28:27.889 [info] [main] Log level: Info
+2024-10-25 15:28:27.889 [info] [main] Validating found git in: "git"
+2024-10-25 15:28:27.889 [info] [main] Using git "2.25.1" from "git"
+2024-10-25 15:28:27.889 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-25 15:28:27.889 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-25 15:28:43.399 [info] [main] Log level: Info
+2024-10-25 15:28:43.399 [info] [main] Validating found git in: "git"
+2024-10-25 15:28:43.399 [info] [main] Using git "2.25.1" from "git"
+2024-10-25 15:28:43.399 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-25 15:28:43.399 [info] > git rev-parse --show-toplevel [27ms]
+2024-10-25 15:28:43.417 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-10-25 15:28:43.428 [info] [Model][openRepository] Opened repository: /root/ros1_ws
+2024-10-25 15:28:43.465 [info] > git rev-parse --show-toplevel [22ms]
+2024-10-25 15:28:43.466 [info] > git config --get commit.template [29ms]
+2024-10-25 15:28:43.500 [info] [Git][getRemotes] No remotes found in the git config file
+2024-10-25 15:28:43.503 [info] > git rev-parse --show-toplevel [30ms]
+2024-10-25 15:28:43.522 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2024-10-25 15:28:43.522 [warning] [Git][getBranch] No such branch: master
+2024-10-25 15:28:43.535 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-10-25 15:28:43.535 [info] > git rev-parse --show-toplevel [14ms]
+2024-10-25 15:28:43.536 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-25 15:28:43.544 [info] > git config --local branch.master.github-pr-owner-number [1ms]
+2024-10-25 15:28:43.544 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-25 15:28:43.551 [info] > git config --local branch.master.remote [2ms]
+2024-10-25 15:28:43.551 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-25 15:28:43.561 [info] > git config --local branch.master.merge [4ms]
+2024-10-25 15:28:43.561 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-25 15:28:43.635 [info] > git status -z -uall [107ms] (cancelled)
+2024-10-25 15:28:44.202 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-25 15:28:46.696 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-25 15:28:49.900 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-25 15:28:55.207 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-25 15:28:56.511 [info] > git check-ignore -v -z --stdin [0ms]
+2024-10-25 15:28:57.602 [info] > git show --textconv :src/robot_pkg/script/lib/lib_if.py [10ms]
+2024-10-25 15:28:57.603 [info] > git ls-files --stage -- /root/ros1_ws/src/robot_pkg/script/lib/lib_if.py [7ms]
+2024-10-25 15:32:00.322 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-25 15:32:29.692 [info] > git check-ignore -v -z --stdin [2ms]
+2024-10-25 15:32:31.554 [info] > git show --textconv :src/robot_pkg/script/node/MS_main.py [6ms]
+2024-10-25 15:32:31.555 [info] > git ls-files --stage -- /root/ros1_ws/src/robot_pkg/script/node/MS_main.py [1ms]
+2024-10-25 15:37:24.082 [info] > git show --textconv :src/robot_pkg/script/lib/lib_if.py [10ms]
+2024-10-25 15:37:24.083 [info] > git ls-files --stage -- /root/ros1_ws/src/robot_pkg/script/lib/lib_if.py [2ms]

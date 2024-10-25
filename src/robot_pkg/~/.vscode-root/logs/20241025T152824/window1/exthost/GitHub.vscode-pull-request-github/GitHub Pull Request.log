@@ -1,0 +1,23 @@
+2024-10-25 15:28:28.063 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-25 15:28:28.063 [info] Activation> Extension version: 0.98.0
+2024-10-25 15:28:28.063 [info] TemporaryState> Error in initialization: Unable to delete nonexistent file 'vscode-userdata:/ros1_ws/src/robot_pkg/~/.vscode-root/User/globalStorage/github.vscode-pull-request-github/temp'
+2024-10-25 15:28:28.219 [info] Looking for git repository
+2024-10-25 15:28:28.219 [info] Found 0 repositories during activation
+2024-10-25 15:28:28.219 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-25 15:28:28.222 [info] Registering git provider
+2024-10-25 15:28:40.373 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-25 15:28:40.373 [info] Activation> Extension version: 0.98.0
+2024-10-25 15:28:40.471 [info] Looking for git repository
+2024-10-25 15:28:40.471 [info] Found 0 repositories during activation
+2024-10-25 15:28:40.471 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-25 15:28:43.292 [info] Registering git provider
+2024-10-25 15:28:43.428 [info] Repository file:///root/ros1_ws has been opened
+2024-10-25 15:28:43.537 [info] Git initialization state changed: state=initialized
+2024-10-25 15:28:43.537 [info] Review+0> Validate state in progress
+2024-10-25 15:28:43.537 [info] Review+0> Validating state...
+2024-10-25 15:28:43.537 [warning] No remotes found. The following remotes are missing: origin, upstream
+2024-10-25 15:28:43.537 [info] No GitHub remotes found for folder /root/ros1_ws
+2024-10-25 15:28:43.538 [info] Trying to use globalState for assignableUsers.
+2024-10-25 15:28:43.549 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-10-25 15:28:43.550 [info] GlobalState does not exist for assignableUsers.
+2024-10-25 15:28:43.562 [info] Review+0> No matching pull request metadata found on GitHub for current branch master

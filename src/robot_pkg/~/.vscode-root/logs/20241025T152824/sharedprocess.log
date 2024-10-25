@@ -1,0 +1,14 @@
+2024-10-25 15:28:31.765 [info] Getting Manifest... ms-vscode-remote.vscode-remote-extensionpack
+2024-10-25 15:28:31.833 [info] Installing extension: ms-vscode-remote.vscode-remote-extensionpack {"productVersion":{"version":"1.94.2","date":"2024-10-09T16:08:44.566Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}
+2024-10-25 15:28:32.924 [info] Extension signature verification result for ms-vscode-remote.vscode-remote-extensionpack: Success. Executed: true. Duration: 633ms.
+2024-10-25 15:28:32.957 [info] Extracted extension to file:///root/.vscode/extensions/ms-vscode-remote.vscode-remote-extensionpack-0.26.0: ms-vscode-remote.vscode-remote-extensionpack
+2024-10-25 15:28:32.963 [info] Renamed to /root/.vscode/extensions/ms-vscode-remote.vscode-remote-extensionpack-0.26.0
+2024-10-25 15:28:32.979 [info] Marked extension as uninstalled ms-vscode-remote.vscode-remote-extensionpack-0.25.0
+2024-10-25 15:28:32.989 [info] Extension installed successfully: ms-vscode-remote.vscode-remote-extensionpack vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-10-25 15:28:33.048 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at lm.create (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39253)
+    at Es (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39360)
+    at Fr.ib (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22661)
+    at Fr.stat (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:15994)
+    at async eh.stat (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84484)
+    at async Kl.yb (file:///usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66600)
