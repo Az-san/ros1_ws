@@ -1,0 +1,16 @@
+2024-10-24 15:40:05.243 [info] Started local extension host with pid 21192.
+2024-10-24 15:40:07.883 [info] [perf] Render performance baseline is 21ms
+2024-10-24 15:40:10.661 [info] Started local extension host with pid 21258.
+2024-10-24 15:40:13.222 [info] [perf] Render performance baseline is 21ms
+2024-10-24 15:40:27.007 [error] [Extension Host] Error: spawn docker ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:286:19)
+    at onErrorNT (node:internal/child_process:484:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-10-24 15:40:43.355 [info] Started local extension host with pid 21331.
+2024-10-24 15:40:45.980 [info] [perf] Render performance baseline is 28ms
+2024-10-24 15:41:28.251 [info] Started local extension host with pid 21423.
+2024-10-24 15:41:30.884 [info] [perf] Render performance baseline is 21ms
+2024-10-24 15:41:34.130 [error] [Extension Host] Error: spawn docker ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:286:19)
+    at onErrorNT (node:internal/child_process:484:16)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)

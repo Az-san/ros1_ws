@@ -1,0 +1,58 @@
+2024-10-24 15:40:07.567 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-24 15:40:07.567 [info] Activation> Extension version: 0.98.0
+2024-10-24 15:40:07.635 [info] Looking for git repository
+2024-10-24 15:40:07.635 [info] Found 0 repositories during activation
+2024-10-24 15:40:07.635 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-24 15:40:07.638 [info] Registering git provider
+2024-10-24 15:40:11.938 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-24 15:40:11.938 [info] Activation> Extension version: 0.98.0
+2024-10-24 15:40:11.951 [info] Looking for git repository
+2024-10-24 15:40:11.951 [info] Found 0 repositories during activation
+2024-10-24 15:40:11.951 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-24 15:40:22.033 [info] Registering git provider
+2024-10-24 15:40:22.110 [info] Repository file:///root/ros1_ws has been opened
+2024-10-24 15:40:22.195 [info] Git initialization state changed: state=initialized
+2024-10-24 15:40:22.195 [info] Review+0> Validate state in progress
+2024-10-24 15:40:22.195 [info] Review+0> Validating state...
+2024-10-24 15:40:22.195 [warning] No remotes found. The following remotes are missing: origin, upstream
+2024-10-24 15:40:22.195 [info] No GitHub remotes found for folder /root/ros1_ws
+2024-10-24 15:40:22.196 [info] Trying to use globalState for assignableUsers.
+2024-10-24 15:40:22.216 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-10-24 15:40:22.226 [info] GlobalState does not exist for assignableUsers.
+2024-10-24 15:40:22.230 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-10-24 15:40:45.555 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-24 15:40:45.555 [info] Activation> Extension version: 0.98.0
+2024-10-24 15:40:45.740 [info] Looking for git repository
+2024-10-24 15:40:45.740 [info] Found 0 repositories during activation
+2024-10-24 15:40:45.740 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-24 15:40:45.742 [info] Registering git provider
+2024-10-24 15:40:45.742 [info] Review+0> Validate state in progress
+2024-10-24 15:40:45.742 [info] Review+0> Validating state...
+2024-10-24 15:40:45.743 [warning] No remotes found. The following remotes are missing: origin, upstream
+2024-10-24 15:40:45.743 [info] No GitHub remotes found for folder /root/ros1_ws
+2024-10-24 15:40:45.743 [info] Trying to use globalState for assignableUsers.
+2024-10-24 15:40:45.768 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-10-24 15:40:45.769 [info] GlobalState does not exist for assignableUsers.
+2024-10-24 15:40:45.785 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-10-24 15:41:29.413 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2024-10-24 15:41:29.413 [info] Activation> Extension version: 0.98.0
+2024-10-24 15:41:29.429 [info] Looking for git repository
+2024-10-24 15:41:29.429 [info] Found 0 repositories during activation
+2024-10-24 15:41:29.429 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-24 15:41:32.112 [info] Registering git provider
+2024-10-24 15:41:32.147 [info] Git initialization state changed: state=initialized
+2024-10-24 15:41:46.858 [info] Repository file:///ros1_ws has been opened
+2024-10-24 15:41:46.859 [info] Review+0> Validate state in progress
+2024-10-24 15:41:46.859 [info] Review+0> Validating state...
+2024-10-24 15:41:46.861 [warning] No remotes found. The following remotes are missing: origin, upstream
+2024-10-24 15:41:46.861 [info] No GitHub remotes found for folder /ros1_ws
+2024-10-24 15:41:46.862 [info] Trying to use globalState for assignableUsers.
+2024-10-24 15:41:47.024 [info] GlobalState does not exist for assignableUsers.
+2024-10-24 15:41:47.953 [info] Review+0> Validate state in progress
+2024-10-24 15:41:47.954 [info] Review+0> Validating state...
+2024-10-24 15:41:47.954 [info] Repo state for file:///ros1_ws changed.
+2024-10-24 15:41:47.955 [info] Repo file:///ros1_ws has already been setup.
+2024-10-24 15:41:48.008 [info] Found GitHub remote for folder /ros1_ws
+2024-10-24 15:41:48.009 [info] Using in-memory cached assignable users.
+2024-10-24 15:41:48.036 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-24 15:41:48.037 [info] Review+0> No matching pull request metadata found on GitHub for current branch main

@@ -1,0 +1,135 @@
+2024-10-24 15:40:06.344 [info] [main] ログ レベル: Info
+2024-10-24 15:40:06.344 [info] [main] Git の検証が検出されました: "git"
+2024-10-24 15:40:06.344 [info] [main] "git" から Git "2.25.1" を使用しています
+2024-10-24 15:40:06.344 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-24 15:40:06.344 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-24 15:40:22.084 [info] [main] ログ レベル: Info
+2024-10-24 15:40:22.084 [info] [main] Git の検証が検出されました: "git"
+2024-10-24 15:40:22.084 [info] [main] "git" から Git "2.25.1" を使用しています
+2024-10-24 15:40:22.084 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-24 15:40:22.084 [info] > git rev-parse --show-toplevel [32ms]
+2024-10-24 15:40:22.101 [info] > git rev-parse --git-dir --git-common-dir [12ms]
+2024-10-24 15:40:22.111 [info] [Model][openRepository] Opened repository: /root/ros1_ws
+2024-10-24 15:40:22.128 [info] > git rev-parse --show-toplevel [4ms]
+2024-10-24 15:40:22.129 [info] > git config --get commit.template [10ms]
+2024-10-24 15:40:22.141 [info] [Git][getRemotes] No remotes found in the git config file
+2024-10-24 15:40:22.142 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-10-24 15:40:22.142 [warning] [Git][getBranch] No such branch: master
+2024-10-24 15:40:22.153 [info] > git rev-parse --show-toplevel [17ms]
+2024-10-24 15:40:22.166 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+2024-10-24 15:40:22.192 [info] > git rev-parse --show-toplevel [34ms]
+2024-10-24 15:40:22.194 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-24 15:40:22.208 [info] > git config --local branch.master.github-pr-owner-number [5ms]
+2024-10-24 15:40:22.208 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:22.219 [info] > git config --local branch.master.remote [3ms]
+2024-10-24 15:40:22.219 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:22.229 [info] > git status -z -uall [82ms] (cancelled)
+2024-10-24 15:40:22.230 [info] > git config --local branch.master.merge [4ms]
+2024-10-24 15:40:22.230 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:22.637 [info] > git check-ignore -v -z --stdin [1ms]
+2024-10-24 15:40:44.127 [info] [main] ログ レベル: Info
+2024-10-24 15:40:44.127 [info] [main] Git の検証が検出されました: "git"
+2024-10-24 15:40:44.127 [info] [main] "git" から Git "2.25.1" を使用しています
+2024-10-24 15:40:44.127 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-24 15:40:44.127 [info] > git rev-parse --show-toplevel [3ms]
+2024-10-24 15:40:44.127 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.135 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.135 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.139 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.139 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.142 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.142 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.145 [info] > git rev-parse --show-toplevel [0ms]
+2024-10-24 15:40:44.145 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.149 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-24 15:40:44.149 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.152 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-24 15:40:44.152 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.155 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.155 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.158 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.158 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.162 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-24 15:40:44.162 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.165 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.168 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.168 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.171 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.171 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.175 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.175 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.178 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.178 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.181 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.181 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.185 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:40:44.185 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:44.569 [info] > git rev-parse --show-toplevel [382ms]
+2024-10-24 15:40:44.569 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:45.121 [info] > git rev-parse --show-toplevel [499ms]
+2024-10-24 15:40:45.187 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-10-24 15:40:45.197 [info] [Model][openRepository] Opened repository: /root/ros1_ws
+2024-10-24 15:40:45.200 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-24 15:40:45.363 [info] > git rev-parse --show-toplevel [47ms]
+2024-10-24 15:40:45.363 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:45.363 [info] > git config --get commit.template [53ms]
+2024-10-24 15:40:45.498 [info] [Git][getRemotes] No remotes found in the git config file
+2024-10-24 15:40:45.519 [info] > git rev-parse --show-toplevel [109ms]
+2024-10-24 15:40:45.519 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:45.522 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2024-10-24 15:40:45.522 [warning] [Git][getBranch] No such branch: master
+2024-10-24 15:40:45.572 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [24ms]
+2024-10-24 15:40:45.676 [info] > git status -z -uall [139ms] (cancelled)
+2024-10-24 15:40:45.758 [info] > git config --local branch.master.github-pr-owner-number [8ms]
+2024-10-24 15:40:45.758 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:45.770 [info] > git config --local branch.master.remote [2ms]
+2024-10-24 15:40:45.770 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:45.783 [info] > git config --local branch.master.merge [6ms]
+2024-10-24 15:40:45.783 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:40:45.804 [info] > git rev-parse --show-toplevel [3ms]
+2024-10-24 15:40:45.804 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-10-24 15:40:45.852 [info] > git check-ignore -v -z --stdin [2ms]
+2024-10-24 15:41:32.188 [info] [main] ログ レベル: Info
+2024-10-24 15:41:32.188 [info] [main] Git の検証が検出されました: "git"
+2024-10-24 15:41:32.188 [info] [main] "git" から Git "2.25.1" を使用しています
+2024-10-24 15:41:32.188 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-24 15:41:32.188 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:41:32.188 [info] > git rev-parse --show-toplevel [1ms]
+2024-10-24 15:41:32.188 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2024-10-24 15:41:46.834 [info] > git rev-parse --show-toplevel [2ms]
+2024-10-24 15:41:46.840 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-10-24 15:41:46.859 [info] [Model][openRepository] Opened repository: /ros1_ws
+2024-10-24 15:41:46.880 [info] > git config --get commit.template [6ms]
+2024-10-24 15:41:46.895 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2024-10-24 15:41:46.942 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [22ms]
+2024-10-24 15:41:47.943 [info] > git status -z -uall [1037ms]
+2024-10-24 15:41:47.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [15ms]
+2024-10-24 15:41:47.993 [info] > git config --get commit.template [14ms]
+2024-10-24 15:41:47.994 [info] > git config --local branch.main.vscode-merge-base [4ms]
+2024-10-24 15:41:47.994 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:41:48.035 [info] > git config --local branch.main.github-pr-owner-number [14ms]
+2024-10-24 15:41:48.035 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-24 15:41:48.037 [info] > git reflog main --grep-reflog=branch: Created from *. [29ms]
+2024-10-24 15:41:48.080 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [34ms]
+2024-10-24 15:41:48.088 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [54ms]
+2024-10-24 15:41:48.090 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [2ms]
+2024-10-24 15:41:48.131 [info] > git config --local branch.main.vscode-merge-base origin/main [32ms]
+2024-10-24 15:41:48.133 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms] (cancelled)
+2024-10-24 15:41:48.153 [info] > git status -z -uall [45ms] (cancelled)
+2024-10-24 15:41:48.158 [info] > git config --get commit.template [5ms]
+2024-10-24 15:41:48.158 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [17ms]
+2024-10-24 15:41:48.169 [info] > git config --local branch.main.vscode-merge-base [2ms]
+2024-10-24 15:41:48.188 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2024-10-24 15:41:48.189 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [12ms]
+2024-10-24 15:41:48.200 [info] > git merge-base refs/heads/main refs/remotes/origin/main [2ms]
+2024-10-24 15:41:48.217 [info] > git diff --name-status -z --diff-filter=ADMR 8a834ca403a65da14597150e31b4b2990ceaf245...refs/remotes/origin/main [9ms]
+2024-10-24 15:41:48.257 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-10-24 15:41:48.320 [info] > git status -z -uall [93ms]
+2024-10-24 15:41:48.678 [info] > git check-ignore -v -z --stdin [14ms]
+2024-10-24 15:41:54.984 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat -n50 --skip=0 --topo-order --decorate=full --stdin [6768ms]
+2024-10-24 15:42:11.917 [info] > git config --get commit.template [2ms]
+2024-10-24 15:42:11.926 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-10-24 15:42:11.945 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2024-10-24 15:42:12.006 [info] > git status -z -uall [72ms]
+2024-10-24 15:42:12.650 [info] > git check-ignore -v -z --stdin [4ms]

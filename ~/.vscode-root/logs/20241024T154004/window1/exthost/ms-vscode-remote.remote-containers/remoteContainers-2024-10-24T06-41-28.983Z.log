@@ -1,0 +1,8 @@
+[2024-10-24T06:41:29.364Z] Dev Containers 0.388.0 in VS Code 1.94.2 (384ff7382de624fb94dbaf6da11977bba1ecd427).
+[2024-10-24T06:41:29.364Z] Initializing configuration support...
+[2024-10-24T06:41:29.365Z] Internal initialization of dev container support package...
+[2024-10-24T06:41:34.106Z] Start: Run: docker version --format {{json .}}
+[2024-10-24T06:41:34.113Z] Stop (7 ms): Run: docker version --format {{json .}}
+[2024-10-24T06:41:34.113Z] spawn docker ENOENT
+[2024-10-24T06:41:34.116Z] Stop (10 ms): Run: docker version --format {{json .}}
+[2024-10-24T06:41:34.116Z] CLI host's PATH: /opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
