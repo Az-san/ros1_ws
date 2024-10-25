@@ -3,25 +3,26 @@
 
 
 
-
 #==================================================
-
 ## @file libraspi
 ## @author Kentaro NAKAMURA
 ## @brief ライブラリクラス
-
+## @modified by Maiko Kudo
 #==================================================
 
 
 
 
 #==================================================
-
 # import
-
 #==================================================
 import sys
+import time
+import pygame
+import math
 import roslib
+import rospy
+from std_msgs.msg import String
 
 sys.path.append(roslib.packages.get_pkg_dir("robot_pkg") + "/script/import")
 from common_import import *
@@ -34,148 +35,83 @@ from common_import import *
 
 
 
-
 #==================================================
-
 ## @class LibIF
 ## @brief 自作ライブラリクラス
-
+## @modified by Maiko Kudo
 #==================================================
 class LibIF:
     #==================================================
-    
     ## @fn __init__
     ## @brief コンストラクタ
+    ## @modified by Maiko Kudo
     ## @param 
     ## @return
-
     #==================================================
-    def __init__(
-        self
-    ):
-        #==================================================
-
+    def __init__(self):
         # メンバ変数
-
-        #==================================================
-
-        #==================================================
-
-        # ROSインタフェース
-
-        #==================================================
         self.pub_gui_state = rospy.Publisher(
             'gui_state', 
             String, 
             queue_size=1
         )
 
-
-        #==================================================
-
-        # イニシャライズ
-
-        #==================================================
-        pygame.joystick.init()
-        try:
-            self.j = pygame.joystick.Joystick(0) # create a joystick instance
-            self.j.init() # init instance
-            print("Joystickの名称: " + self.j.get_name())
-            print("ボタン数 : " + str(self.j.get_numbuttons()))
-        except pygame.error:
-            print("Joystickが見つかりませんでした。")
-
         # pygameの初期化
         pygame.init()
-
-
-        return
-
-
+        print("キーボード操作が有効です。")
 
 
     #==================================================
-    
-    ## @fn delete
-    ## @brief デストラクタ
+    ## @fn waitKeyboard
+    ## @brief キーボードの入力を待つ関数
+    ## @modified by Maiko Kudo
     ## @param
     ## @return
-
     #==================================================
-    def delete(
-        self
-    ):
-        #==================================================
-
-        # ファイナライズ
-
-        #==================================================
-
-
-        return
-
-
-
-    #==================================================
-    
-    ## @fn waitGamepad
-    ## @brief ゲームパッドの入力を待つ関数
-    ## @param
-    ## @return
-
-    #==================================================
-    def waitGamepad(
-        self,
-        timeout = 30
-    ):
+    def waitKeyboard(self, timeout=30):
         # 開始の時刻を保存
         start_time = time.time()
         # 経過した時刻を取得
         end_time = time.time()
-        # resultにゲームパッドの値を格納 timeout秒でbreak
+        # resultにキーボードの入力を格納 timeout秒でbreak
         result = None
+
         while end_time - start_time <= timeout:
             for event in pygame.event.get():
-                if event.type == pygame.locals.JOYHATMOTION:
-                    x, y = self.j.get_hat(0)
-                    if y == 1:
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_w:  # Wキーで上方向
                         print("St")
                         result = [1, 0, 0, 0]
-                    elif y == -1:
+                    elif event.key == pygame.K_s:  # Sキーで下方向
                         print("Ba")
                         result = [0, 1, 0, 0]
-                    elif x == 1:
+                    elif event.key == pygame.K_d:  # Dキーで右方向
                         print("Ri")
                         result = [0, 0, 1, 0]
-                    elif x == -1:
+                    elif event.key == pygame.K_a:  # Aキーで左方向
                         print("Le")
                         result = [0, 0, 0, 1]
-
-            if result != None:
+            
+            if result is not None:
                 break
 
             end_time = time.time()
 
         return result
-
+    
 
     #==================================================
-    
-    ## @fn changeGamepadInputUDRLtoNSEW
-    ## @brief ゲームパッドで入力したロボットの進行方向を上下左右から東西南北にする関数
+    ## @fn changeKeyboardInputUDRLtoNSEW
+    ## @brief キーボードで入力したロボットの進行方向を上下左右から東西南北にする関数
+    ## @modified by Maiko Kudo
     ## @param direction_udrl 決定されたロボットの進行方向（上下左右）
     ## @param rad 地図座標系におけるロボットの現在角度
     ## @return direction_nsew 決定されたロボットの進行方向（東西南北）
-
     #==================================================
-    def changeGamepadInputUDRLtoNSEW(
-        self,
-        direction_udrl,
-        rad
-    ):
+    def changeKeyboardInputUDRLtoNSEW(self, direction_udrl, rad):
         # 上下左右にロボット座標系の角度を割り振る
         rad_list_udrl = [0.0, math.pi, math.pi*3/2, math.pi/2]
-        rad_direction_udrl = rad_list_udrl[[i for i in range(len(direction_udrl)) if direction_udrl[i]==1][0]]
+        rad_direction_udrl = rad_list_udrl[[i for i in range(len(direction_udrl)) if direction_udrl[i] == 1][0]]
 
         # 地図座標系におけるロボット座標系の角度を求め、決定されたロボットの進行方向（東西南北）を求める
         direction_nsew = [0, 0, 0, 0]
@@ -189,8 +125,8 @@ class LibIF:
             direction_nsew[3] = 1
 
         return direction_nsew
-
-
+    
+    
     #==================================================
     
     ## @fn changeGUI
