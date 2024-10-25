@@ -1,4 +1,4 @@
-image: /root/ros1_ws/src/robot_pkg/io/map.pgm
+image: /root/ros1_ws/src/robot_pkg/data/2024_10_25_20_58_6_1_1_A/map.pgm
 resolution: 0.050000
 origin: [-0.580147, -2.439726, 0.000000]
 negate: 0
