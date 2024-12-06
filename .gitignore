@@ -1,0 +1,4 @@
+# ビルド関連フォルダ
+build/
+devel/
+.vscode/

@@ -1,0 +1,10 @@
+(lp0
+S'human'
+p1
+aS'robot'
+p2
+aS'human'
+p3
+aS'robot'
+p4
+a.
